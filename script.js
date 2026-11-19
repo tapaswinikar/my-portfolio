@@ -41,13 +41,14 @@ if (contactForm) {
         const message = document.getElementById("message").value;
 
         try {
-            const response = await fetch("https://my-portfolio-2-br1j.onrender.com/contact", {, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({ name, email, message })
-            });
+           const response = await fetch("https://my-portfolio-2-br1j.onrender.com/contact", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ name, email, message })
+});
+            
 
             const result = await response.json();
 
